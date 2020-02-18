@@ -15,3 +15,6 @@ python3 setup.py install
 popd
 make firmware
 deactivate
+pushd firmware/greatfet_usb/build/
+greatfet_firmware -w greatfet_usb.bin
+popd
