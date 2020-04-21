@@ -10,10 +10,6 @@ pipeline {
                 sh '''#!/bin/bash
                     python3 -m venv virtualenv
                     . virtualenv/bin/activate
-                    echo "HOME:"
-                    echo $HOME
-                    echo "USER:"
-                    echo $USER
                     git submodule init
                     git submodule update
                     pip3 install PyYAML
