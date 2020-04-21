@@ -15,6 +15,7 @@ RUN apt-get -y install cmake
 RUN apt-get -y install gcc-arm-none-eabi
 RUN apt-get -y install python3
 RUN apt-get -y install python3-pip
+RUN apt-get -y install python3-venv
 RUN apt-get -y install git
 RUN pip3 install --upgrade pip
 RUN pip3 install PyYAML
