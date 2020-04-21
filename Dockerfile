@@ -13,8 +13,7 @@ RUN apt-get -y install python3
 RUN apt-get -y install python3-pip
 RUN apt-get -y install python3-venv
 RUN apt-get -y install git
-RUN pip3 install --upgrade pip
-RUN pip3 install PyYAML
+RUN apt-get -y install libusb-1.0-0
 
 # Inform Docker that the container is listening on the specified port at runtime.
 EXPOSE 7080
